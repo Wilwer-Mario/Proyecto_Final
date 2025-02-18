@@ -12,7 +12,7 @@
     --color-primario: #003366;
     --color-secundario: #ff6600;
     --color-fondo: #f4f4f4;
-    --box-shadow:0px 15px 25px rgba(0,0,0,0.08);
+    --box-shadow:0px 15px 25px rgba(0,0,0,0.09);
     --transition:all 0.8s ease;
 }
 
@@ -20,6 +20,7 @@ body {
     font-family: "Poppins", serif;
     line-height: 1.5;
     color: var(--bg-primari);
+    background-color: var(--gris);
 }
 a{
     text-decoration: none;
@@ -37,7 +38,7 @@ img {
 
 /*  NABVAR  */
 .navbar-brand img {
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 
@@ -69,6 +70,19 @@ img {
     }
 }
 
+/* SLIDER */
+
+.carousel-inner {
+    position: relative;
+    height: 840px;
+    overflow: hidden;
+}
+.carousel-inner img {
+    position: absolute;
+    width: 100%;
+    height: auto%;
+    object-fit: cover;
+}
 
 .hero {
     background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
