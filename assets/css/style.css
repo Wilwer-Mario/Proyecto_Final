@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 :root {
     --verde: #016150;
@@ -14,6 +16,7 @@
     --color-fondo: #f4f4f4;
     --box-shadow:0px 15px 25px rgba(0,0,0,0.09);
     --transition:all 0.8s ease;
+    --font-title:"Roboto Condensed", serif;
 }
 
 body {
@@ -71,53 +74,52 @@ img {
     height: 800px;
     overflow: hidden;
 }
-.carousel-inner img {
+
+.carousel-caption {
     position: absolute;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    object-position: center;
+    right: 0;
+    bottom: 25vw;
+    left: 60vw;
+    color:#fff;
+    text-align: right;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px 0 0 10px;
+    
 }
 
-
-
-
-
-
-.hero {
-    background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
-    color: white;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.hero h1 {
-    font-size: 3.5rem;
+.carousel-caption h5 {
     font-weight: bold;
+    padding-right: 2vh;
+    font-size: 1.7em;
 }
-.btn-primario {
-    background-color: var(--color-secundario);
-    color: white;
-    border: none;
+
+.carousel-caption p {
+    padding-right: 2vh;
+    font-size: 1.8em;
 }
-.btn-primario:hover {
-    background-color: #e65c00;
+/*
+@media (min-width: 992px) {
+    .carousel-caption{
+        bottom: 13vw;
+        left: 40vw;
+        background-color: rgba(0,0,0,0.6);
+    }
 }
-.departamento-card img {
-    height: 250px;
-    object-fit: cover;
+@media (min-width: 768px) {
+    .carousel-caption{
+        bottom: 13vw;
+        left: 20vw;
+        background-color: rgba(0,0,0,0.6);
+    }
 }
-.busqueda {
-    background-color: var(--color-primario);
-    color: white;
-    padding: 40px 0;
-}
-.testimonios {
-    background-color: var(--color-fondo);
-    padding: 50px 0;
-}
+*/
+
+
+
+
+
+
+
 .footer {
     background-color: var(--color-primario);
     color: white;
