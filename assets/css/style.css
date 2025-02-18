@@ -67,8 +67,6 @@ img {
 }
 
 /* SLIDER */
-
-/* Estilos personalizados para el carrusel */
 .carousel-inner {
     height: 800px; /* Altura fija para el carrusel */
     overflow: hidden;
