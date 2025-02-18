@@ -1,0 +1,47 @@
+:root {
+    --color-primario: #003366;
+    --color-secundario: #ff6600;
+    --color-fondo: #f4f4f4;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.hero {
+    background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+    color: white;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.btn-primario {
+    background-color: var(--color-secundario);
+    color: white;
+    border: none;
+}
+.btn-primario:hover {
+    background-color: #e65c00;
+}
+.departamento-card img {
+    height: 250px;
+    object-fit: cover;
+}
+.busqueda {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 40px 0;
+}
+.testimonios {
+    background-color: var(--color-fondo);
+    padding: 50px 0;
+}
+.footer {
+    background-color: var(--color-primario);
+    color: white;
+    padding: 20px 0;
+}
