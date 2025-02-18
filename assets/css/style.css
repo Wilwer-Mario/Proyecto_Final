@@ -64,25 +64,25 @@ img {
     font-family: 100;
 }
 
-@include media-breakpoint-up(sm) {
-    .navbar-nav {
-        display: block;
-    }
-}
-
 /* SLIDER */
 
 .carousel-inner {
     position: relative;
-    height: 840px;
+    height: 800px;
     overflow: hidden;
 }
 .carousel-inner img {
     position: absolute;
     width: 100%;
-    height: auto%;
+    height: auto;
     object-fit: cover;
+    object-position: center;
 }
+
+
+
+
+
 
 .hero {
     background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
