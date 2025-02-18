@@ -15,12 +15,17 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand d-flex justify-content-start" href="#">
-                <img src="./assets/img/vivia-logo.png" alt="">
+            <!-- Logo de la marca -->
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/vivia-logo.png" alt="Logo de Viva">
             </a>
+    
+            <!-- Botón de menú para dispositivos móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+    
+            <!-- Menú de navegación -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-3">
                     <li class="nav-item">
@@ -30,19 +35,19 @@
                         <a class="nav-link" href="#escoge_tu_proyecto">Escoge tu proyecto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#viva_te_guia">Viva te guia</a>
+                        <a class="nav-link" href="#viva_te_guia">Viva te guía</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#beneficios_viva">Beneficios viva</a>
+                        <a class="nav-link" href="#beneficios_viva">Beneficios Viva</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Servicios al cliente</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Quienes somos</a>
+                        <a class="nav-link" href="#about">Quiénes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contactanos</a>
+                        <a class="nav-link" href="#contacto">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -52,12 +57,16 @@
     <!-- SLIDER - INICIO -->
     <section id="slider">
         <div id="carouselExampleCaptions" class="carousel slide">
+            <!-- Indicadores del carrusel -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+    
+            <!-- Contenido del carrusel -->
             <div class="carousel-inner">
+                <!-- Slide 1 -->
                 <div class="carousel-item active">
                     <img src="./assets/img/slider_1.png" class="d-block w-100" alt="Nuevo edificio">
                     <div class="carousel-caption d-none d-md-block">
@@ -65,13 +74,17 @@
                         <p>Los Parques de Breña Club Residencial</p>
                     </div>
                 </div>
+    
+                <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <img src="./assets/img/slider_2.jpg" class="d-block w-100" alt="Edificio en construccion">
+                    <img src="./assets/img/slider_2.jpg" class="d-block w-100" alt="Edificio en construcción">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>DEPARTAMENTOS EN CONSTRUCCION</h5>
+                        <h5>DEPARTAMENTOS EN CONSTRUCCIÓN</h5>
                         <p>¿Imaginas poder participar en el diseño de tu departamento desde su etapa inicial?</p>
                     </div>
                 </div>
+    
+                <!-- Slide 3 -->
                 <div class="carousel-item">
                     <img src="./assets/img/slider_3.png" class="d-block w-100" alt="The Grand, Pezet & Portillo by Carlos Ott & Ponce de León">
                     <div class="carousel-caption d-none d-md-block">
@@ -80,6 +93,8 @@
                     </div>
                 </div>
             </div>
+    
+            <!-- Controles del carrusel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -94,130 +109,156 @@
 
 
     <!-- SERVICIO  -->
-    <section id="services">
+    <section id="services" class="py-5 bg-light">
         <div class="container">
-            <div class="row">
+            <!-- Sección: Canales de Atención -->
+            <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1>
-                            CANALES DE ATENCION
-                        </h1>
-                    </div>
+                    <h1 class="display-4 fw-bold mb-4">CANALES DE ATENCIÓN</h1>
                 </div>
-                <div class="section-information mb-3">
-                    <div class="row g-0">
-                        <div class="col-md-1">
-                            <img src="./assets/img/atencion_1.svg" class="img-fluid rounded-start" alt="Atencion al cliente">
-                        </div>
-                        <div class="col-md-11">
-                            <div class="card-body">
-                                <h5 class="card-title">Atención al cliente</h5>
-                                <p class="card-text">Si tienes consultas o requerimeintos sobre tu proceso de compra, comprobantes de pago o cualquier trámite referente a la compra de tu depa o lote, puedes comunicarte con nosotros a nuestro Call Center 206-7270 de lunes a domingo de 9:00am a 6:00pm. También puedes enviarnos un mensaje a nuestro correo a atencionalcliente@viva.com.pe.</p>
+            </div>
+    
+            <!-- Tarjetas de Atención -->
+            <div class="row">
+                <div class="col-12">
+                    <!-- Tarjeta 1: Atención al cliente -->
+                    <div class="card mb-3 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-2 d-flex align-items-center justify-content-center p-3">
+                                <img src="./assets/img/atencion_1.svg" class="img-fluid" alt="Atención al cliente">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Atención al cliente</h5>
+                                    <p class="card-text">
+                                        Si tienes consultas o requerimientos sobre tu proceso de compra, comprobantes de pago o cualquier trámite referente a la compra de tu depa o lote, puedes comunicarte con nosotros a nuestro Call Center 206-7270 de lunes a domingo de 9:00am a 6:00pm. También puedes enviarnos un mensaje a nuestro correo a atencionalcliente@viva.com.pe.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-0">
-                        <div class="col-md-1">
-                            <img src="./assets/img/atencion_post_venta.svg" class="img-fluid rounded-start" alt="Atencion al cliente">
-                        </div>
-                        <div class="col-md-11">
-                            <div class="card-body">
-                                <h5 class="card-title">Atención Post Venta</h5>
-                                <p class="card-text">Si tuvieses algún problema o requerimiento en tu departamento ponemos a disposición nuestro correo postventa@viva.com.pe para la canalización de tu requerimiento. En caso de ser una emergencia podrá comunicarse al teléfono: 206-7290, para que sean atendidas a la brevedad posible. Se considera como EMERGENCIA a un problema de inundación, ausencia total de electricidad o alguna falla que impida el uso de los ascensores.</p>
+    
+                    <!-- Tarjeta 2: Atención Post Venta -->
+                    <div class="card mb-3 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-2 d-flex align-items-center justify-content-center p-3">
+                                <img src="./assets/img/atencion_post_venta.svg" class="img-fluid" alt="Atención Post Venta">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Atención Post Venta</h5>
+                                    <p class="card-text">
+                                        Si tuvieses algún problema o requerimiento en tu departamento, ponemos a disposición nuestro correo postventa@viva.com.pe para la canalización de tu requerimiento. En caso de ser una emergencia, podrá comunicarse al teléfono: 206-7290, para que sean atendidas a la brevedad posible. Se considera como EMERGENCIA a un problema de inundación, ausencia total de electricidad o alguna falla que impida el uso de los ascensores.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-0">
-                        <div class="col-md-1">
-                            <img src="./assets/img/atencion_ventas.svg" class="img-fluid rounded-start" alt="Atencion al cliente">
-                        </div>
-                        <div class="col-md-11">
-                            <div class="card-body">
-                                <h5 class="card-title">Atención de Venta</h5>
-                                <p class="card-text">Si deseas saber más sobre nuestros proyectos puedes comunicarte al teléfono 206-7200 de lunes a domingo de 9:00am a 6:00pm o a nuestro whatsapp exclusivo de ventas: 942947065.</p>
+    
+                    <!-- Tarjeta 3: Atención de Venta -->
+                    <div class="card mb-3 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-2 d-flex align-items-center justify-content-center p-3">
+                                <img src="./assets/img/atencion_ventas.svg" class="img-fluid" alt="Atención de Venta">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Atención de Venta</h5>
+                                    <p class="card-text">
+                                        Si deseas saber más sobre nuestros proyectos, puedes comunicarte al teléfono 206-7200 de lunes a domingo de 9:00am a 6:00pm o a nuestro WhatsApp exclusivo de ventas: 942947065.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-0">
-                        <div class="col-md-1">
-                            <img src="./assets/img/mira.svg" class="img-fluid rounded-start" alt="Atencion al cliente">
-                        </div>
-                        <div class="col-md-11">
-                            <div class="card-body">
-                                <h5 class="card-title">Mira a Quién le Compras</h5>
-                                <p class="card-text">Para sentirte más seguro y sepas a qué empresa le estás comprando tu inmueble, puedes acceder al portal de INDECOPI para el registro de infracciones y sanciones aquí.</p>
+    
+                    <!-- Tarjeta 4: Mira a Quién le Compras -->
+                    <div class="card mb-3 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-2 d-flex align-items-center justify-content-center p-3">
+                                <img src="./assets/img/mira.svg" class="img-fluid" alt="Mira a Quién le Compras">
+                            </div>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Mira a Quién le Compras</h5>
+                                    <p class="card-text">
+                                        Para sentirte más seguro y sepas a qué empresa le estás comprando tu inmueble, puedes acceder al portal de INDECOPI para el registro de infracciones y sanciones aquí.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row g-0">
-                        <div class="col-md-1">
-                            <img src="./assets/img/atencion_ciudadano.svg" class="img-fluid rounded-start" alt="Atencion al cliente">
-                        </div>
-                        <div class="col-md-11">
-                            <div class="card-body">
-                                <h5 class="card-title">Atención al Ciudadano</h5>
-                                <p class="card-text">También es importante que conozcas que, de acuerdo con el código de protección al consumidor los canales de Atención de INDECOPI están ubicados en Calle de la Prosa 138, San Borja. También puedes comunicarte al teléfono 0-800-4-4040 en horario de oficina.</p>
+    
+                    <!-- Tarjeta 5: Atención al Ciudadano -->
+                    <div class="card mb-3 shadow-sm">
+                        <div class="row g-0">
+                            <div class="col-md-2 d-flex align-items-center justify-content-center p-3">
+                                <img src="./assets/img/atencion_ciudadano.svg" class="img-fluid" alt="Atención al Ciudadano">
                             </div>
-                        </div>
-                    </div>
-                    <div class="row g-0">
-                        <div class="col-md-1">
-                            <img src="./assets/img/atencion_post_venta.svg" class="img-fluid rounded-start" alt="Atencion al cliente">
-                        </div>
-                        <div class="col-md-11">
-                            <div class="card-body">
-                                <h5 class="card-title">Atención al cliente</h5>
-                                <p class="card-text">Si tienes consultas o requerimeintos sobre tu proceso de compra, comprobantes de pago o cualquier trámite referente a la compra de tu depa o lote, puedes comunicarte con nosotros a nuestro Call Center 206-7270 de lunes a domingo de 9:00am a 6:00pm. También puedes enviarnos un mensaje a nuestro correo a atencionalcliente@viva.com.pe.</p>
+                            <div class="col-md-10">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Atención al Ciudadano</h5>
+                                    <p class="card-text">
+                                        También es importante que conozcas que, de acuerdo con el código de protección al consumidor, los canales de Atención de INDECOPI están ubicados en Calle de la Prosa 138, San Borja. También puedes comunicarte al teléfono 0-800-4-4040 en horario de oficina.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
+    
+            <!-- Sección: Preguntas Frecuentes -->
+            <div class="row mt-5">
                 <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1>
-                            PREGUNTAS FRECUENTES
-                        </h1>
-                    </div>
+                    <h1 class="display-4 fw-bold mb-4">PREGUNTAS FRECUENTES</h1>
                 </div>
-                <div class="section-collapse">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
+            </div>
+    
+            <!-- Acordeón de Preguntas Frecuentes -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="accordion" id="accordionExample">
+                        <!-- Pregunta 1 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     ¿Quién realiza el trámite de Declaración Jurada de Compra en la municipalidad?
                                 </button>
                             </h2>
-                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                            <div class="accordion-body">
-                                <p>
-                                    La Declaración Jurada de Compra que se presente en la municipalidad correspondiente y el Certificado Negativo de Alcabala es tramitado por la empresa, aunque es el comprador a quien le corresponde efectuar dicho trámite. Si bien el cliente asume los gastos de estos trámites, Viva Negocio Inmobiliario lo realiza como un servicio a sus clientes.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                                    ¿En caso de tener algún inconveniente o desperfecto en mi departamento con quién me comunico?
-                                </button>
-                            </h2>
-                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
-                                        Comuníquese con nosotros a nuestro Call Center 206-7270, en horario de oficina; envíenos un correo electrónico a postventa@viva.com.pe; o ingrese su requerimiento a través de nuestra página web: <a href="http://www.viva.com.pe/registra-requerimiento" target="_blank">www.viva.com.pe/registra-requerimiento</a>
+                                        La Declaración Jurada de Compra que se presente en la municipalidad correspondiente y el Certificado Negativo de Alcabala es tramitado por la empresa, aunque es el comprador a quien le corresponde efectuar dicho trámite. Si bien el cliente asume los gastos de estos trámites, Viva Negocio Inmobiliario lo realiza como un servicio a sus clientes.
                                     </p>
                                 </div>
                             </div>
                         </div>
+    
+                        <!-- Pregunta 2 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿En caso de tener algún inconveniente o desperfecto en mi departamento con quién me comunico?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>
+                                        Comuníquese con nosotros a nuestro Call Center 206-7270, en horario de oficina; envíenos un correo electrónico a postventa@viva.com.pe; o ingrese su requerimiento a través de nuestra página web: <a href="http://www.viva.com.pe/registra-requerimiento" target="_blank">www.viva.com.pe/registra-requerimiento</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Pregunta 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     ¿Qué inconvenientes cubre la garantía de Viva Negocio Inmobiliario y por cuánto tiempo?
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
                                         Por eventuales vicios ocultos que pudieran tener los inmuebles objeto de compra venta y que existan antes de su transferencia al comprador, el plazo de garantía es de seis (06) meses contados a partir de la recepción de los inmuebles por el comprador o de la recepción de la comunicación poniéndolos a su disposición.
@@ -228,13 +269,15 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Pregunta 4 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     ¿Quién realiza los mantenimientos periódicos en mi departamento?
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
                                         Cada propietario desde la entrega del departamento es responsable por efectuar los mantenimientos periódicos contratando a personal calificado. La frecuencia dependerá del uso de las necesidades de cada material. Existen en el mercado empresas que se dedican al mantenimiento de viviendas y que le ayudarán a prolongar la vida útil de su propiedad.
@@ -242,13 +285,15 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Pregunta 5 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     ¿Quién se encarga de los mantenimientos periódicos de las áreas comunes?
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
                                         La Administración nombrada por la Junta de Propietarios es la responsable de llevar a cabo el Programa de Mantenimiento de los equipos e instalaciones críticas. Para esto se debe contratar a personal calificado.
@@ -256,13 +301,15 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Pregunta 6 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
-                                    Si realizo una modificación al interior de mi propiedad pierdo la garantía?
+                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    ¿Si realizo una modificación al interior de mi propiedad pierdo la garantía?
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <p>
                                         No se deben realizar modificaciones al interior de su departamento hasta que no se dé la independización registral del mismo, debido a que es necesario mantener la edificación conforme ha sido prevista en la licencia de obra hasta la obtención de la conformidad de obra por parte de la Municipalidad Distrital competente. Las modificaciones permitidas se encuentran reguladas en el Reglamento Interno y deberán contar con la respectiva licencia municipal.
@@ -279,114 +326,119 @@
     <!-- ABOUT  -->
     <section id="about">
         <div class="container">
-            <div class="row">
+            <!-- Primera sección: Somos la Unidad Inmobiliaria -->
+            <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1>
-                            SOMO LA UNIDAD INMOBILIARIA DE LA CORPORACION AENZA
-                        </h1>
-                        <h4>
-                            Somos uno de los Desarrolladores Inmobiliarios más grandes del Perú, con más de 90 proyectos inmobiliarios desarrollados a lo largo de nuestra historia, siendo líderes en el sector de vivienda de interés social
-                        </h4>
-                    </div>
+                    <h1 class="display-4 fw-bold">SOMOS LA UNIDAD INMOBILIARIA DE LA CORPORACIÓN AENZA</h1>
+                    <h4 class="fw-light mt-3">
+                        Somos uno de los Desarrolladores Inmobiliarios más grandes del Perú, con más de 90 proyectos inmobiliarios desarrollados a lo largo de nuestra historia, siendo líderes en el sector de vivienda de interés social.
+                    </h4>
                 </div>
-                <div class="img">
-                    <img src="./assets/img/quienes-somos-viva.png" alt="quienes somos">
-                </div>
+            </div>
+    
+            <!-- Imagen -->
+            <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1>
-                            NUESTRO PROPÓSITO
-                        </h1>
-                        <h4>
-                            Hacemos posibles espacios y entornos sostenibles donde se puedan proyectar vidas y negocios, y lo hacemos generando bienestar, desarrollo urbano y compromiso ciudadano.
-                        </h4>
-                    </div>
+                    <img src="./assets/img/quienes-somos-viva.png" alt="Quiénes somos" class="img-fluid rounded">
                 </div>
+            </div>
+    
+            <!-- Segunda sección: Nuestro Propósito -->
+            <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1>
-                            NUESTRA TRAYECTORIA
-                        </h1>
-                        <h4>
-                            En nuestra historia, tenemos más de 24 mil unidades inmobiliarias entregadas, con más de 90 proyectos desarrollados y presencia en más de 19 distritos de Lima Metropolitana y Callao, así como en Piura y Huancayo.
-                        </h4>
-                    </div>
+                    <h1 class="display-4 fw-bold">NUESTRO PROPÓSITO</h1>
+                    <h4 class="fw-light mt-3">
+                        Hacemos posibles espacios y entornos sostenibles donde se puedan proyectar vidas y negocios, y lo hacemos generando bienestar, desarrollo urbano y compromiso ciudadano.
+                    </h4>
                 </div>
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./assets/img/card_1.png" class="card-img-top" alt="Vivienda de interes social">
-                            <div class="card-body">
-                                <h5 class="card-title">VIVIENDA DE INTERES SOCIAL</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./assets/img/card_2.png" class="card-img-top" alt="Lotes industriales">
-                            <div class="card-body">
-                                <h5 class="card-title">LOTES INDUSTRIALES</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="./assets/img/card_3.png" class="card-img-top" alt="Vivienda tradicional y oficinas">
-                            <div class="card-body">
-                                <h5 class="card-title">VIVIENDA TRADICIONAL Y OFICINAS<h5>
-                            </div>
+            </div>
+    
+            <!-- Tercera sección: Nuestra Trayectoria -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">NUESTRA TRAYECTORIA</h1>
+                    <h4 class="fw-light mt-3">
+                        En nuestra historia, tenemos más de 24 mil unidades inmobiliarias entregadas, con más de 90 proyectos desarrollados y presencia en más de 19 distritos de Lima Metropolitana y Callao, así como en Piura y Huancayo.
+                    </h4>
+                </div>
+            </div>
+    
+            <!-- Tarjetas de Trayectoria -->
+            <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/img/tra_1.png" class="card-img-top" alt="Magnolias Club Residencial">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Magnolias Club Residencial</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 text-center">
-                    <div class="section-title">
-                        <h1>
-                            NUESTRA EXPERIENCIA
-                        </h1>
-                        <h4>
-                            Más de 24 mil unidades inmobiliarias entregadas, entre viviendas, oficinas, lotes industriales y centros comerciales respaldan nuestra experiencia.
-                        </h4>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/img/tra_2.png" class="card-img-top" alt="Villa los Molles">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Villa los Molles</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/img/tra_3.png" class="card-img-top" alt="Los Girasoles Condominio Residencial">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Los Girasoles Condominio Residencial</h5>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+    
+            <!-- Cuarta sección: Nuestra Experiencia -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold">NUESTRA EXPERIENCIA</h1>
+                    <h4 class="fw-light mt-3">
+                        Más de 24 mil unidades inmobiliarias entregadas, entre viviendas, oficinas, lotes industriales y centros comerciales respaldan nuestra experiencia.
+                    </h4>
+                </div>
+            </div>
+    
+            <!-- Tarjetas de Experiencia -->
+            <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
                 <div class="col">
-                    <div class="card h-100">
-                        <img src="./assets/img/card_1.png" class="card-img-top" alt="Vivienda de interes social">
-                        <div class="card-body">
-                            <h5 class="card-title">VIVIENDA DE INTERES SOCIAL</h5>
-                            <h5 class="card-title">+ 19.500</h5>
+                    <div class="card h-100 shadow-sm">
+                        <img src="./assets/img/card_1.png" class="card-img-top" alt="Vivienda de interés social">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">VIVIENDA DE INTERÉS SOCIAL</h5>
+                            <h5 class="card-title fw-bold text-primary">+ 19.500</h5>
                             <p class="card-text">Unidades entregadas</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 shadow-sm">
                         <img src="./assets/img/card_2.png" class="card-img-top" alt="Lotes industriales">
-                        <div class="card-body">
-                            <h5 class="card-title">LOTES INDUSTRIALES</h5>
-                            <h5 class="card-title">+ 750</h5>
-                            <p class="card-text">Hectarias vendidas</p>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">LOTES INDUSTRIALES</h5>
+                            <h5 class="card-title fw-bold text-primary">+ 750</h5>
+                            <p class="card-text">Hectáreas vendidas</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 shadow-sm">
                         <img src="./assets/img/card_3.png" class="card-img-top" alt="Vivienda tradicional y oficinas">
-                        <div class="card-body">
-                            <h5 class="card-title">VIVIENDA TRADICIONAL Y OFICINAS<h5>
-                            <h5 class="card-title">+ 2.900</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">VIVIENDA TRADICIONAL Y OFICINAS</h5>
+                            <h5 class="card-title fw-bold text-primary">+ 2.900</h5>
                             <p class="card-text">Unidades entregadas</p>
                         </div>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100">
+                    <div class="card h-100 shadow-sm">
                         <img src="./assets/img/card_4.png" class="card-img-top" alt="Centros comerciales">
-                        <div class="card-body">
-                            <h5 class="card-title">CENTROS COMERCIALES</h5>
-                            <h5 class="card-title">+ 2.5M</h5>
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">CENTROS COMERCIALES</h5>
+                            <h5 class="card-title fw-bold text-primary">+ 2.5M</h5>
                             <p class="card-text">Visitas anuales</p>
                         </div>
                     </div>
