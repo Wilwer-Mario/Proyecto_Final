@@ -110,15 +110,176 @@ img {
     }
 }
 
+/* servicios */
+#services {
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Fondo claro */
+}
 
+#services h1 {
+    color: #2c3e50; /* Color oscuro para títulos */
+    margin-bottom: 1.5rem;
+}
 
+#services .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+#services .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
+#services .card-title {
+    color: #2c3e50; /* Color oscuro para títulos de tarjetas */
+    font-weight: bold;
+}
 
+#services .card-text {
+    color: #34495e; /* Color gris oscuro para texto */
+    line-height: 1.6;
+}
 
-
-.footer {
-    background-color: var(--color-primario);
+#services .accordion-button {
+    background-color: #3498db; /* Color azul para botones del acordeón */
     color: white;
-    padding: 20px 0;
+    font-weight: bold;
+}
+
+#services .accordion-button:focus {
+    box-shadow: none;
+}
+
+#services .accordion-body {
+    background-color: #f8f9fa; /* Fondo claro para el cuerpo del acordeón */
+    padding: 1.5rem;
+}
+
+/* about */
+#about {
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Fondo claro */
+}
+
+#about h1 {
+    color: #2c3e50; /* Color oscuro para títulos */
+    margin-bottom: 1.5rem;
+}
+
+#about h4 {
+    color: #34495e; /* Color gris oscuro para subtítulos */
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+#about .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#about .card-img-top {
+    border-radius: 10px 10px 0 0;
+}
+
+#about .card-body {
+    padding: 1.5rem;
+}
+
+#about .card-title {
+    color: #2c3e50; /* Color oscuro para títulos de tarjetas */
+}
+
+#about .text-primary {
+    color: #3498db !important; /* Color azul para números destacados */
+}
+
+#about .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/* Contactos */
+#contacto {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+#contacto h1 {
+    color: var(--verde-3);
+}
+#contacto .btn {
+    background-color: var(--verde-2);
+    color: var(--color-fondo);
+}
+#contacto .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contacto .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#contacto .card-title {
+    color: var(--verde-3);
+    font-weight: bold;
+}
+
+li strong {
+    color: var(--verde-3);
+}
+
+#contacto .list-unstyled li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#contacto .list-unstyled i {
+    font-size: 1.2rem;
+    color: #00943b;
+    margin-right: 0.5rem;
+}
+
+#contacto iframe {
+    border-radius: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #016150; /* Color verde de Viva */
+}
+
+footer h5 {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffcc00 !important; /* Color amarillo al hacer hover */
+}
+
+footer .bi {
+    transition: transform 0.3s ease;
+}
+
+footer .bi:hover {
+    transform: scale(1.2); /* Efecto de escala al hacer hover en los íconos */
 }
