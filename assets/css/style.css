@@ -16,7 +16,6 @@
     --transition:all 0.5s ease;
 }
 
-
 body {
     font-family: "Poppins", serif;
     line-height: 1.5;
@@ -26,6 +25,7 @@ a{
     text-decoration: none;
     color: var(--first-color);
     transition: var(--transition);
+    text-align: center;
 }
 a:hover {
     color: var(--fotter-color);
@@ -37,20 +37,23 @@ img {
 
 /*  NABVAR  */
 .navbar-brand img {
-    width: 50%;
+    width: 70%;
     height: auto;
     object-fit: cover;
 }
 
-.navbar{
-    box-shadow: var(--box-shadow);
-}
 .container {
-    width: 90%;
+    border: 1px solid yellow;
+}
+.navbar{
+    border: 2px solid red;
+    width: 100%;
+    box-shadow: var(--box-shadow);
 }
 
 .navbar-nav .nav-link{
-    font-weight: 200;
+    border: 2px solid red;
+    font-weight: 300;
     color: var(--first-color);
 }
 
