@@ -113,25 +113,18 @@ img {
 }
 
 .carousel-caption {
-    right: 0;
-    left: 0;
-    bottom: 20px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
     border-radius: 10px;
-    padding: 10px;
 }
 
 .carousel-caption h5 {
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
     color: var(--blanco);
 }
 
 .carousel-caption p {
-    font-size: 1rem;
-    margin-bottom: 0;
+    font-size: 1.2rem;
     color: var(--blanco);
 }
 
@@ -187,6 +180,13 @@ img {
 
 /* lista de proyectos */
 
+.list-proyect .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.list-proyect .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 .list-proyect .bi {
     color: var(--color-secundario)
 }
@@ -201,15 +201,27 @@ img {
     align-items: center;
     justify-content: center;
 }
+.list-proyect .card-body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        height: 100%; 
+        padding: 1.5rem; 
+}
+.list-proyect .card-body .btn {
+    margin-top: 1rem; 
+}
+
 .list-proyect h1 {
     display: flex;
     justify-content: center;
     font-family: var(--font-body);
 }
 .list-proyect .bground {
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
     color: var(--blanco);
-    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
 }
 
 .list-proyect .bground:hover {
@@ -230,7 +242,7 @@ img {
 .list-proyect .bground .white1 {
     color: var(--color-secundario);
     font-weight: 800;
-    font-size:xx-large; 
+    font-size: xx-large; 
 }
 
 
