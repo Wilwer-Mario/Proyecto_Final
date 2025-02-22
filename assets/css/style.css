@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Nuevo :root con colores y fuentes estandarizados */
+/* Variables de colores y fuentes */
 :root {
     --verde-claro: #90EE90; /* Verde claro para títulos */
     --verde: #016150; /* Verde principal */
@@ -11,7 +11,7 @@
     --gris: #EFF0F0; /* Gris claro para fondos */
     --blanco: #FFFFFF; /* Blanco para texto y fondos */
     --color-primario: #003366; /* Azul marino */
-    --color-secundario: #ff6600; /* Naranja para acentos */
+    --color-secundario: #ac3963; /* Lila para acentos */
     --color-fondo: #f4f4f4; /* Fondo claro */
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.09); /* Sombra predeterminada */
     --transition: all 0.8s ease; /* Transición suave */
@@ -25,14 +25,14 @@
 /* Estilos generales */
 body {
     font-family: var(--font-body);
-    line-height: 1.5;
+    line-height: 1.6;
     color: var(--negro);
     background-color: var(--gris);
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-title);
-    color: var(--verde-claro); /* Títulos en verde claro */
+    color: var(--verde-oscuro); /* Títulos en verde claro */
 }
 
 p, .lead {
@@ -44,11 +44,10 @@ a {
     text-decoration: none;
     color: var(--negro);
     transition: var(--transition);
-    text-align: center;
 }
 
 a:hover {
-    color: var(--verde-claro); /* Cambiar a verde claro al hacer hover */
+    color: var(--verde-oscuro); /* Cambiar a verde claro al hacer hover */
 }
 
 img {
@@ -65,23 +64,34 @@ img {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.btn {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+}
+
+.btn:hover {
+    border: 1px solid var(--verde-oscuro);
+    color: var(--verde-oscuro)
+}
+
 /* NAVBAR */
 .navbar {
+    background-color: var(--blanco);
     box-shadow: var(--box-shadow);
 }
 
 .navbar-brand img {
-    width: 100%;
-    height: auto;
+    max-height: 50px;
 }
 
 .navbar-nav .nav-link {
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--negro);
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--verde-claro); /* Cambiar a verde claro al hacer hover */
+    color: var(--verde-oscuro); /* Cambiar a verde claro al hacer hover */
 }
 
 .navbar-nav .nav-link.active {
@@ -157,160 +167,170 @@ img {
     }
 }
 
-/* Beneficios Viva */
-#beneficios_viva {
+
+/* Sección de proyectos */
+.projects-section {
+    padding: 6rem 0;
+    background-color: var(--blanco);
+}
+.projects-section .card {
+    transition: transform 0.3s ease;
+}
+
+.projects-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.projects-section .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Sección de beneficios */
+.beneficios_section {
     background-color: var(--gris);
     padding: 4rem 0;
 }
 
-#beneficios_viva h1 {
-    color: var(--verde-claro); /* Títulos en verde claro */
+.beneficios_section h1 {
+    color: var(--verde-oscuro);
     margin-bottom: 1.5rem;
 }
 
-#beneficios_viva .lead {
+.beneficios_section p {
+    color: var(--blanco)
+}
+
+.beneficios_section .lead {
     color: var(--azul-marino);
     font-size: 1.25rem;
 }
 
-#beneficios_viva .card {
-    border: none;
+.beneficios_section .card {
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: var(--blanco);
+    color: var(--blanco);
 }
 
-#beneficios_viva .card:hover {
+.beneficios_section .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-#beneficios_viva .card-title {
-    color: var(--verde-claro); /* Títulos de tarjetas en verde claro */
-    font-weight: bold;
-    margin-top: 1rem;
+.beneficios_section .position-absolute {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
 }
 
-#beneficios_viva .card-text {
-    color: var(--azul-marino);
-    font-size: 0.9rem;
-    line-height: 1.6;
-}
-
-#beneficios_viva .card-img-top {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-}
-
-/* servicios */
-#services {
+/* Sección de servicios */
+.service_section {
     padding: 4rem 0;
-    background-color: var(--color-fondo); /* Fondo claro */
+    background-color: var(--color-fondo);
 }
 
-#services h1 {
-    color: var(--verde-claro); /* Títulos en verde claro */
+.service_section h1 {
+    color: var(--verde-oscuro);
     margin-bottom: 1.5rem;
 }
 
-#services .card {
+.service_section .card {
     border: none;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#services .card:hover {
+.service_section .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-#services .card-title {
-    color: var(--verde-claro); /* Títulos de tarjetas en verde claro */
+.service_section .card-title {
+    color: var(--verde-oscuro);
     font-weight: bold;
 }
 
-#services .card-text {
-    color: var(--azul-marino); /* Texto de tarjetas en azul marino */
+.service_section .card-text {
+    color: var(--azul-marino);
     line-height: 1.6;
 }
 
-#services .accordion-button {
-    background-color: var(--color-primario); /* Color azul marino para botones del acordeón */
+.service_section .accordion-button {
+    background-color: none;
     color: var(--blanco);
     font-weight: bold;
+    color: var(--verde-oscuro);
 }
 
-#services .accordion-button:focus {
+.service_section .accordion-button:focus {
     box-shadow: none;
 }
 
-#services .accordion-body {
-    background-color: var(--color-fondo); /* Fondo claro para el cuerpo del acordeón */
+.service_section .accordion-body {
+    background-color: var(--blanco);
     padding: 1.5rem;
 }
 
-/* about */
-#about {
+/* Sección de about */
+.about_section {
     padding: 4rem 0;
-    background-color: var(--color-fondo); /* Fondo claro */
+    background-color: var(--gris);
 }
 
-#about h1 {
-    color: var(--verde-claro); /* Títulos en verde claro */
+.about_section h1 {
+    color: var(--verde-oscuro);
     margin-bottom: 1.5rem;
 }
 
-#about h4 {
-    color: var(--azul-marino); /* Subtítulos en azul marino */
+.about_section h4 {
+    color: var(--azul-marino);
     font-weight: 300;
     line-height: 1.6;
 }
 
-#about .card {
+.about_section .card {
     border: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#about .card:hover {
+.about_section .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-#about .card-img-top {
+.about_section .card-img-top {
     border-radius: 10px 10px 0 0;
 }
 
-#about .card-body {
+.about_section .card-body {
     padding: 1.5rem;
 }
 
-#about .card-title {
-    color: var(--verde-claro); /* Títulos de tarjetas en verde claro */
+.about_section .card-title {
+    color: var(--color-secundario);
 }
 
-#about .text-primary {
-    color: var(--color-primario) !important; /* Color azul marino para números destacados */
+.about_section .text-primary {
+    color: var(--color-primario) !important;
 }
 
-#about .img-fluid {
+.about_section .img-fluid {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
-/* Contactos */
+/* Sección de contacto */
 #contacto {
     padding: 4rem 0;
     background-color: var(--color-fondo);
 }
 
 #contacto h1 {
-    color: var(--verde-claro); /* Títulos en verde claro */
+    color: var(--verde-oscuro);
 }
 
 #contacto .btn {
-    background-color: var(--verde); /* Botón en verde principal */
+    background-color: var(--verde);
     color: var(--blanco);
 }
 
@@ -326,12 +346,12 @@ img {
 }
 
 #contacto .card-title {
-    color: var(--verde-claro); /* Títulos de tarjetas en verde claro */
+    color: var(--verde-oscuro);
     font-weight: bold;
 }
 
 li strong {
-    color: var(--verde-claro); /* Texto en verde claro */
+    color: var(--verde-oscuro);
 }
 
 #contacto .list-unstyled li {
@@ -342,7 +362,7 @@ li strong {
 
 #contacto .list-unstyled i {
     font-size: 1.2rem;
-    color: var(--verde); /* Íconos en verde principal */
+    color: var(--verde-oscuro);
     margin-right: 0.5rem;
 }
 
@@ -352,7 +372,7 @@ li strong {
 
 /* FOOTER */
 footer {
-    background-color: var(--verde-oscuro); /* Fondo verde oscuro */
+    background-color: var(--verde-oscuro);
     color: var(--blanco);
     padding: 4rem 0;
 }
@@ -368,7 +388,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--color-secundario) !important; /* Color naranja al hacer hover */
+    color: var(--color-secundario) !important;
 }
 
 footer .bi {
@@ -377,4 +397,8 @@ footer .bi {
 
 footer .bi:hover {
     transform: scale(1.2);
+}
+
+footer p {
+    color: var(--blanco);
 }
