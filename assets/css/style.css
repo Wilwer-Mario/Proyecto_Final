@@ -1,45 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/* Nuevo :root con colores y fuentes estandarizados */
 :root {
-    --verde: #016150;
-    --verde-2: #00943b;
-    --verde-3: #139240;
-    --fd-oscuro: #202022cc;
-    --titulo: #ac3963;
-    --first-color: #000000;
-    --second-color: #202022;
-    --gris: #EFF0F0;
-    --color-primario: #003366;
-    --color-secundario: #ff6600;
-    --color-fondo: #f4f4f4;
-    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.09);
-    --transition: all 0.8s ease;
-    --font-title: "Roboto Condensed", serif;
+    --verde-claro: #90EE90; /* Verde claro para títulos */
+    --verde: #016150; /* Verde principal */
+    --verde-oscuro: #004d3d; /* Verde medio oscuro para footer */
+    --azul-marino: #003366; /* Azul marino para párrafos */
+    --negro: #000000; /* Negro para texto */
+    --gris: #EFF0F0; /* Gris claro para fondos */
+    --blanco: #FFFFFF; /* Blanco para texto y fondos */
+    --color-primario: #003366; /* Azul marino */
+    --color-secundario: #ff6600; /* Naranja para acentos */
+    --color-fondo: #f4f4f4; /* Fondo claro */
+    --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.09); /* Sombra predeterminada */
+    --transition: all 0.8s ease; /* Transición suave */
+
+    /* Fuentes */
+    --font-title: "Roboto Condensed", serif; /* Fuente para títulos */
+    --font-body: "Poppins", sans-serif; /* Fuente para texto general */
+    --font-accent: "Bebas Neue", sans-serif; /* Fuente para acentos o detalles */
 }
 
+/* Estilos generales */
 body {
-    font-family: "Poppins", serif;
+    font-family: var(--font-body);
     line-height: 1.5;
-    color: var(--first-color);
+    color: var(--negro);
     background-color: var(--gris);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+    color: var(--verde-claro); /* Títulos en verde claro */
+}
+
+p, .lead {
+    font-family: var(--font-body);
+    color: var(--azul-marino); /* Párrafos en azul marino */
 }
 
 a {
     text-decoration: none;
-    color: var(--first-color);
+    color: var(--negro);
     transition: var(--transition);
     text-align: center;
 }
 
 a:hover {
-    color: var(--verde);
+    color: var(--verde-claro); /* Cambiar a verde claro al hacer hover */
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.shadow-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shadow-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* NAVBAR */
@@ -54,41 +77,52 @@ img {
 
 .navbar-nav .nav-link {
     font-weight: 500;
-    color: var(--first-color);
+    color: var(--negro);
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--verde-2);
+    color: var(--verde-claro); /* Cambiar a verde claro al hacer hover */
 }
 
 .navbar-nav .nav-link.active {
-    color: var(--verde);
+    color: var(--verde-claro); /* Cambiar a verde claro para enlaces activos */
     font-weight: bold;
 }
 
 /* SLIDER */
 .carousel-inner {
-    height: 800px; /* Altura fija para el carrusel */
+    height: auto;
+    max-height: 800px;
     overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .carousel-caption {
     right: 0;
-    left: 60vw;
-    bottom: 25vw;
-    text-align: right;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px 0 0 10px;
-    padding: 1rem;
+    left: 0;
+    bottom: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .carousel-caption h5 {
     font-weight: bold;
-    font-size: 1.7em;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--blanco);
 }
 
 .carousel-caption p {
-    font-size: 1.8em;
+    font-size: 1rem;
+    margin-bottom: 0;
+    color: var(--blanco);
 }
 
 /* Media queries para ajustar el carrusel en diferentes tamaños de pantalla */
@@ -96,7 +130,17 @@ img {
     .carousel-caption {
         left: 20vw;
         bottom: 13vw;
-        background-color: rgba(0, 0, 0, 0.6);
+        text-align: right;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 1rem;
+    }
+
+    .carousel-caption h5 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1.5rem;
     }
 }
 
@@ -104,18 +148,69 @@ img {
     .carousel-caption {
         left: 40vw;
         bottom: 13vw;
-        background-color: rgba(0, 0, 0, 0.6);
     }
+    .carousel-caption h5 {
+        font-size: 2.5rem;
+    }
+    .carousel-caption p {
+        font-size: 1.8rem;
+    }
+}
+
+/* Beneficios Viva */
+#beneficios_viva {
+    background-color: var(--gris);
+    padding: 4rem 0;
+}
+
+#beneficios_viva h1 {
+    color: var(--verde-claro); /* Títulos en verde claro */
+    margin-bottom: 1.5rem;
+}
+
+#beneficios_viva .lead {
+    color: var(--azul-marino);
+    font-size: 1.25rem;
+}
+
+#beneficios_viva .card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--blanco);
+}
+
+#beneficios_viva .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#beneficios_viva .card-title {
+    color: var(--verde-claro); /* Títulos de tarjetas en verde claro */
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+#beneficios_viva .card-text {
+    color: var(--azul-marino);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+#beneficios_viva .card-img-top {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
 }
 
 /* servicios */
 #services {
     padding: 4rem 0;
-    background-color: #f8f9fa; /* Fondo claro */
+    background-color: var(--color-fondo); /* Fondo claro */
 }
 
 #services h1 {
-    color: #2c3e50; /* Color oscuro para títulos */
+    color: var(--verde-claro); /* Títulos en verde claro */
     margin-bottom: 1.5rem;
 }
 
@@ -131,18 +226,18 @@ img {
 }
 
 #services .card-title {
-    color: #2c3e50; /* Color oscuro para títulos de tarjetas */
+    color: var(--verde-claro); /* Títulos de tarjetas en verde claro */
     font-weight: bold;
 }
 
 #services .card-text {
-    color: #34495e; /* Color gris oscuro para texto */
+    color: var(--azul-marino); /* Texto de tarjetas en azul marino */
     line-height: 1.6;
 }
 
 #services .accordion-button {
-    background-color: #3498db; /* Color azul para botones del acordeón */
-    color: white;
+    background-color: var(--color-primario); /* Color azul marino para botones del acordeón */
+    color: var(--blanco);
     font-weight: bold;
 }
 
@@ -151,23 +246,23 @@ img {
 }
 
 #services .accordion-body {
-    background-color: #f8f9fa; /* Fondo claro para el cuerpo del acordeón */
+    background-color: var(--color-fondo); /* Fondo claro para el cuerpo del acordeón */
     padding: 1.5rem;
 }
 
 /* about */
 #about {
     padding: 4rem 0;
-    background-color: #f8f9fa; /* Fondo claro */
+    background-color: var(--color-fondo); /* Fondo claro */
 }
 
 #about h1 {
-    color: #2c3e50; /* Color oscuro para títulos */
+    color: var(--verde-claro); /* Títulos en verde claro */
     margin-bottom: 1.5rem;
 }
 
 #about h4 {
-    color: #34495e; /* Color gris oscuro para subtítulos */
+    color: var(--azul-marino); /* Subtítulos en azul marino */
     font-weight: 300;
     line-height: 1.6;
 }
@@ -191,11 +286,11 @@ img {
 }
 
 #about .card-title {
-    color: #2c3e50; /* Color oscuro para títulos de tarjetas */
+    color: var(--verde-claro); /* Títulos de tarjetas en verde claro */
 }
 
 #about .text-primary {
-    color: #3498db !important; /* Color azul para números destacados */
+    color: var(--color-primario) !important; /* Color azul marino para números destacados */
 }
 
 #about .img-fluid {
@@ -204,20 +299,21 @@ img {
     border-radius: 10px;
 }
 
-
 /* Contactos */
 #contacto {
     padding: 4rem 0;
-    background-color: #f8f9fa;
+    background-color: var(--color-fondo);
 }
 
 #contacto h1 {
-    color: var(--verde-3);
+    color: var(--verde-claro); /* Títulos en verde claro */
 }
+
 #contacto .btn {
-    background-color: var(--verde-2);
-    color: var(--color-fondo);
+    background-color: var(--verde); /* Botón en verde principal */
+    color: var(--blanco);
 }
+
 #contacto .card {
     border: none;
     border-radius: 10px;
@@ -230,12 +326,12 @@ img {
 }
 
 #contacto .card-title {
-    color: var(--verde-3);
+    color: var(--verde-claro); /* Títulos de tarjetas en verde claro */
     font-weight: bold;
 }
 
 li strong {
-    color: var(--verde-3);
+    color: var(--verde-claro); /* Texto en verde claro */
 }
 
 #contacto .list-unstyled li {
@@ -246,7 +342,7 @@ li strong {
 
 #contacto .list-unstyled i {
     font-size: 1.2rem;
-    color: #00943b;
+    color: var(--verde); /* Íconos en verde principal */
     margin-right: 0.5rem;
 }
 
@@ -254,24 +350,25 @@ li strong {
     border-radius: 10px;
 }
 
-
 /* FOOTER */
-
 footer {
-    background-color: #016150; /* Color verde de Viva */
+    background-color: var(--verde-oscuro); /* Fondo verde oscuro */
+    color: var(--blanco);
+    padding: 4rem 0;
 }
 
 footer h5 {
-    color: #fff;
+    color: var(--blanco);
     font-weight: bold;
 }
 
 footer a {
+    color: var(--blanco);
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #ffcc00 !important; /* Color amarillo al hacer hover */
+    color: var(--color-secundario) !important; /* Color naranja al hacer hover */
 }
 
 footer .bi {
@@ -279,5 +376,5 @@ footer .bi {
 }
 
 footer .bi:hover {
-    transform: scale(1.2); /* Efecto de escala al hacer hover en los íconos */
+    transform: scale(1.2);
 }

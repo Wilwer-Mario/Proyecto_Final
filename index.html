@@ -4,98 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Venta de Departamentos - Vivienda Plus</title>
-    <!--BOOTSTRAP-->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--BOOTSTRAP ICONS-->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--STYLE CSS-->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
             <!-- Logo de la marca -->
             <a class="navbar-brand" href="#">
-                <img src="./assets/img/vivia-logo.png" alt="Logo de Viva">
+                <img src="./assets/img/vivia-logo.png" alt="Logo de Viva" class="img-fluid" style="max-height: 50px;">
             </a>
-    
+
             <!-- Botón de menú para dispositivos móviles -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
+
             <!-- Menú de navegación -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#slider">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#escoge_tu_proyecto">Escoge tu proyecto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#viva_te_guia">Viva te guía</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#beneficios_viva">Beneficios Viva</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Servicios al cliente</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">Quiénes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contáctanos</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#slider">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#escoge_tu_proyecto">Escoge tu proyecto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#viva_te_guia">Viva te guía</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#beneficios_viva">Beneficios Viva</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Servicios al cliente</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Quiénes somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- SLIDER - INICIO -->
-    <section id="slider">
-        <div id="carouselExampleCaptions" class="carousel slide">
+    <section id="slider" class="mb-5">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <!-- Indicadores del carrusel -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-    
+
             <!-- Contenido del carrusel -->
             <div class="carousel-inner">
                 <!-- Slide 1 -->
                 <div class="carousel-item active">
-                    <img src="./assets/img/slider_1.png" class="d-block w-100" alt="Nuevo edificio">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>NUEVOS EDIFICIOS EN BREÑA</h5>
-                        <p>Los Parques de Breña Club Residencial</p>
+                    <img src="./assets/img/slider_1.png" class="d-block w-100 img-fluid" alt="Nuevo edificio">
+                    <div class="carousel-caption d-md-block text-center text-md-end">
+                        <h5 class="display-5 fw-bold">NUEVOS EDIFICIOS EN BREÑA</h5>
+                        <p class="lead d-none d-md-block">Los Parques de Breña Club Residencial</p>
                     </div>
                 </div>
-    
+
                 <!-- Slide 2 -->
                 <div class="carousel-item">
-                    <img src="./assets/img/slider_2.jpg" class="d-block w-100" alt="Edificio en construcción">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>DEPARTAMENTOS EN CONSTRUCCIÓN</h5>
-                        <p>¿Imaginas poder participar en el diseño de tu departamento desde su etapa inicial?</p>
+                    <img src="./assets/img/slider_2.jpg" class="d-block w-100 img-fluid" alt="Edificio en construcción">
+                    <div class="carousel-caption d-md-block text-center text-md-end">
+                        <h5 class="display-5 fw-bold">DEPARTAMENTOS EN CONSTRUCCIÓN</h5>
+                        <p class="lead d-none d-md-block">¿Imaginas poder participar en el diseño de tu departamento desde su etapa inicial?</p>
                     </div>
                 </div>
-    
+
                 <!-- Slide 3 -->
                 <div class="carousel-item">
-                    <img src="./assets/img/slider_3.png" class="d-block w-100" alt="The Grand, Pezet & Portillo by Carlos Ott & Ponce de León">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>THE GRAND, Pezet & Portillo by Carlos</h5>
-                        <p>Una obra maestra de ingeniería y arquitectura</p>
+                    <img src="./assets/img/slider_3.png" class="d-block w-100 img-fluid" alt="The Grand, Pezet & Portillo by Carlos Ott & Ponce de León">
+                    <div class="carousel-caption d-md-block text-center text-md-end">
+                        <h5 class="display-5 fw-bold">THE GRAND, Pezet & Portillo by Carlos</h5>
+                        <p class="lead d-none d-md-block">Una obra maestra de ingeniería y arquitectura</p>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Controles del carrusel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -108,18 +93,91 @@
         </div>
     </section>
 
-
-
-    <!-- SERVICIO  -->
-    <section id="services" class="py-5 bg-light">
+    <!-- BENEFICIOS -->
+    <section id="beneficios_viva" class="py-5 bg-light">
         <div class="container">
-            <!-- Sección: Canales de Atención -->
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold mb-4">CANALES DE ATENCIÓN</h1>
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">BENEFICIOS</h1>
+                <p class="lead">Descubre las ventajas exclusivas de ser parte de la familia Viva.</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Beneficio 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <img src="./assets/img/beneficio-1.svg" class="card-img-top w-50 mx-auto" alt="Beneficio 1" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Tarifas Bajas</h5>
+                            <p class="card-text">Disfruta de tarifas económicas en todos nuestros destinos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficio 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <img src="./assets/img/beneficio-2.svg" class="card-img-top w-50 mx-auto" alt="Beneficio 2" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Puntos Acumulables</h5>
+                            <p class="card-text">Acumula puntos y canjéalos por viajes y beneficios exclusivos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficio 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <img src="./assets/img/beneficio-3.svg" class="card-img-top w-50 mx-auto" alt="Beneficio 3" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Servicio Prioritario</h5>
+                            <p class="card-text">Accede a servicios exclusivos y prioritarios en todos nuestros vuelos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficio 4 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <img src="./assets/img/beneficio-4.svg" class="card-img-top w-50 mx-auto" alt="Beneficio 4" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Descuentos Exclusivos</h5>
+                            <p class="card-text">Obtén descuentos especiales en hoteles, autos y más.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficio 5 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <img src="./assets/img/beneficio-5.svg" class="card-img-top w-50 mx-auto" alt="Beneficio 5" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Flexibilidad en Cambios</h5>
+                            <p class="card-text">Cambia tus fechas de vuelo sin costos adicionales.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beneficio 6 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm text-center p-4">
+                        <img src="./assets/img/beneficio-6.svg" class="card-img-top w-50 mx-auto" alt="Beneficio 6" loading="lazy">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Experiencia Personalizada</h5>
+                            <p class="card-text">Disfruta de una experiencia de viaje adaptada a tus necesidades.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-    
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">CANALES DE ATENCIÓN</h1>
+            </div>
+
             <!-- Tarjetas de Atención -->
             <div class="row">
                 <div class="col-12">
@@ -139,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Tarjeta 2: Atención Post Venta -->
                     <div class="card mb-3 shadow-sm">
                         <div class="row g-0">
@@ -156,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Tarjeta 3: Atención de Venta -->
                     <div class="card mb-3 shadow-sm">
                         <div class="row g-0">
@@ -173,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Tarjeta 4: Mira a Quién le Compras -->
                     <div class="card mb-3 shadow-sm">
                         <div class="row g-0">
@@ -190,7 +248,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Tarjeta 5: Atención al Ciudadano -->
                     <div class="card mb-3 shadow-sm">
                         <div class="row g-0">
@@ -209,115 +267,109 @@
                     </div>
                 </div>
             </div>
-    
-            <!-- Sección: Preguntas Frecuentes -->
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold mb-4">PREGUNTAS FRECUENTES</h1>
-                </div>
+
+            <!-- Preguntas Frecuentes -->
+            <div class="text-center mt-5">
+                <h1 class="display-4 fw-bold">PREGUNTAS FRECUENTES</h1>
             </div>
-    
+
             <!-- Acordeón de Preguntas Frecuentes -->
-            <div class="row">
-                <div class="col-12">
-                    <div class="accordion" id="accordionExample">
-                        <!-- Pregunta 1 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    ¿Quién realiza el trámite de Declaración Jurada de Compra en la municipalidad?
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>
-                                        La Declaración Jurada de Compra que se presente en la municipalidad correspondiente y el Certificado Negativo de Alcabala es tramitado por la empresa, aunque es el comprador a quien le corresponde efectuar dicho trámite. Si bien el cliente asume los gastos de estos trámites, Viva Negocio Inmobiliario lo realiza como un servicio a sus clientes.
-                                    </p>
-                                </div>
-                            </div>
+            <div class="accordion mt-4" id="accordionExample">
+                <!-- Pregunta 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Quién realiza el trámite de Declaración Jurada de Compra en la municipalidad?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                La Declaración Jurada de Compra que se presente en la municipalidad correspondiente y el Certificado Negativo de Alcabala es tramitado por la empresa, aunque es el comprador a quien le corresponde efectuar dicho trámite. Si bien el cliente asume los gastos de estos trámites, Viva Negocio Inmobiliario lo realiza como un servicio a sus clientes.
+                            </p>
                         </div>
-    
-                        <!-- Pregunta 2 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    ¿En caso de tener algún inconveniente o desperfecto en mi departamento con quién me comunico?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>
-                                        Comuníquese con nosotros a nuestro Call Center 206-7270, en horario de oficina; envíenos un correo electrónico a postventa@viva.com.pe; o ingrese su requerimiento a través de nuestra página web: <a href="http://www.viva.com.pe/registra-requerimiento" target="_blank">www.viva.com.pe/registra-requerimiento</a>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Pregunta 3 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    ¿Qué inconvenientes cubre la garantía de Viva Negocio Inmobiliario y por cuánto tiempo?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>
-                                        Por eventuales vicios ocultos que pudieran tener los inmuebles objeto de compra venta y que existan antes de su transferencia al comprador, el plazo de garantía es de seis (06) meses contados a partir de la recepción de los inmuebles por el comprador o de la recepción de la comunicación poniéndolos a su disposición.
-                                    </p>
-                                    <p>
-                                        Por la eventual destrucción total o parcial de los inmuebles objeto de compra venta o evidente peligro de ruina o graves defectos por vicios de la construcción, el plazo de garantía es de cinco (05) años contados a partir de la recepción de los inmuebles por el comprador o de la recepción de la comunicación poniéndolos a su disposición.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
 
-                        <!-- Pregunta 4 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    ¿Quién realiza los mantenimientos periódicos en mi departamento?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>
-                                        Cada propietario desde la entrega del departamento es responsable por efectuar los mantenimientos periódicos contratando a personal calificado. La frecuencia dependerá del uso de las necesidades de cada material. Existen en el mercado empresas que se dedican al mantenimiento de viviendas y que le ayudarán a prolongar la vida útil de su propiedad.
-                                    </p>
-                                </div>
-                            </div>
+                <!-- Pregunta 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿En caso de tener algún inconveniente o desperfecto en mi departamento con quién me comunico?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Comuníquese con nosotros a nuestro Call Center 206-7270, en horario de oficina; envíenos un correo electrónico a postventa@viva.com.pe; o ingrese su requerimiento a través de nuestra página web: <a href="http://www.viva.com.pe/registra-requerimiento" target="_blank">www.viva.com.pe/registra-requerimiento</a>.
+                            </p>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Pregunta 5 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    ¿Quién se encarga de los mantenimientos periódicos de las áreas comunes?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>
-                                        La Administración nombrada por la Junta de Propietarios es la responsable de llevar a cabo el Programa de Mantenimiento de los equipos e instalaciones críticas. Para esto se debe contratar a personal calificado.
-                                    </p>
-                                </div>
-                            </div>
+                <!-- Pregunta 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Qué inconvenientes cubre la garantía de Viva Negocio Inmobiliario y por cuánto tiempo?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Por eventuales vicios ocultos que pudieran tener los inmuebles objeto de compra venta y que existan antes de su transferencia al comprador, el plazo de garantía es de seis (06) meses contados a partir de la recepción de los inmuebles por el comprador o de la recepción de la comunicación poniéndolos a su disposición.
+                            </p>
+                            <p>
+                                Por la eventual destrucción total o parcial de los inmuebles objeto de compra venta o evidente peligro de ruina o graves defectos por vicios de la construcción, el plazo de garantía es de cinco (05) años contados a partir de la recepción de los inmuebles por el comprador o de la recepción de la comunicación poniéndolos a su disposición.
+                            </p>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Pregunta 6 -->
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    ¿Si realizo una modificación al interior de mi propiedad pierdo la garantía?
-                                </button>
-                            </h2>
-                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>
-                                        No se deben realizar modificaciones al interior de su departamento hasta que no se dé la independización registral del mismo, debido a que es necesario mantener la edificación conforme ha sido prevista en la licencia de obra hasta la obtención de la conformidad de obra por parte de la Municipalidad Distrital competente. Las modificaciones permitidas se encuentran reguladas en el Reglamento Interno y deberán contar con la respectiva licencia municipal.
-                                    </p>
-                                </div>
-                            </div>
+                <!-- Pregunta 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Quién realiza los mantenimientos periódicos en mi departamento?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Cada propietario desde la entrega del departamento es responsable por efectuar los mantenimientos periódicos contratando a personal calificado. La frecuencia dependerá del uso de las necesidades de cada material. Existen en el mercado empresas que se dedican al mantenimiento de viviendas y que le ayudarán a prolongar la vida útil de su propiedad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ¿Quién se encarga de los mantenimientos periódicos de las áreas comunes?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                La Administración nombrada por la Junta de Propietarios es la responsable de llevar a cabo el Programa de Mantenimiento de los equipos e instalaciones críticas. Para esto se debe contratar a personal calificado.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            ¿Si realizo una modificación al interior de mi propiedad pierdo la garantía?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                No se deben realizar modificaciones al interior de su departamento hasta que no se dé la independización registral del mismo, debido a que es necesario mantener la edificación conforme ha sido prevista en la licencia de obra hasta la obtención de la conformidad de obra por parte de la Municipalidad Distrital competente. Las modificaciones permitidas se encuentran reguladas en el Reglamento Interno y deberán contar con la respectiva licencia municipal.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -325,47 +377,30 @@
         </div>
     </section>
 
-    <!-- ABOUT  -->
-    <section id="about">
+    <!-- ABOUT -->
+    <section id="about" class="py-5 bg-light">
         <div class="container">
-            <!-- Primera sección: Somos la Unidad Inmobiliaria -->
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold">SOMOS LA UNIDAD INMOBILIARIA DE LA CORPORACIÓN AENZA</h1>
-                    <h4 class="fw-light mt-3">
-                        Somos uno de los Desarrolladores Inmobiliarios más grandes del Perú, con más de 90 proyectos inmobiliarios desarrollados a lo largo de nuestra historia, siendo líderes en el sector de vivienda de interés social.
-                    </h4>
-                </div>
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">SOMOS LA UNIDAD INMOBILIARIA DE LA CORPORACIÓN AENZA</h1>
+                <p class="lead">Somos uno de los Desarrolladores Inmobiliarios más grandes del Perú, con más de 90 proyectos inmobiliarios desarrollados a lo largo de nuestra historia, siendo líderes en el sector de vivienda de interés social.</p>
             </div>
-    
-            <!-- Imagen -->
+
             <div class="row mb-5">
                 <div class="col-12 text-center">
                     <img src="./assets/img/quienes-somos-viva.png" alt="Quiénes somos" class="img-fluid rounded">
                 </div>
             </div>
-    
-            <!-- Segunda sección: Nuestro Propósito -->
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold">NUESTRO PROPÓSITO</h1>
-                    <h4 class="fw-light mt-3">
-                        Hacemos posibles espacios y entornos sostenibles donde se puedan proyectar vidas y negocios, y lo hacemos generando bienestar, desarrollo urbano y compromiso ciudadano.
-                    </h4>
-                </div>
+
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">NUESTRO PROPÓSITO</h1>
+                <p class="lead">Hacemos posibles espacios y entornos sostenibles donde se puedan proyectar vidas y negocios, y lo hacemos generando bienestar, desarrollo urbano y compromiso ciudadano.</p>
             </div>
-    
-            <!-- Tercera sección: Nuestra Trayectoria -->
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold">NUESTRA TRAYECTORIA</h1>
-                    <h4 class="fw-light mt-3">
-                        En nuestra historia, tenemos más de 24 mil unidades inmobiliarias entregadas, con más de 90 proyectos desarrollados y presencia en más de 19 distritos de Lima Metropolitana y Callao, así como en Piura y Huancayo.
-                    </h4>
-                </div>
+
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">NUESTRA TRAYECTORIA</h1>
+                <p class="lead">En nuestra historia, tenemos más de 24 mil unidades inmobiliarias entregadas, con más de 90 proyectos desarrollados y presencia en más de 19 distritos de Lima Metropolitana y Callao, así como en Piura y Huancayo.</p>
             </div>
-    
-            <!-- Tarjetas de Trayectoria -->
+
             <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
                 <div class="col">
                     <div class="card h-100 shadow-sm">
@@ -392,18 +427,12 @@
                     </div>
                 </div>
             </div>
-    
-            <!-- Cuarta sección: Nuestra Experiencia -->
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h1 class="display-4 fw-bold">NUESTRA EXPERIENCIA</h1>
-                    <h4 class="fw-light mt-3">
-                        Más de 24 mil unidades inmobiliarias entregadas, entre viviendas, oficinas, lotes industriales y centros comerciales respaldan nuestra experiencia.
-                    </h4>
-                </div>
+
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">NUESTRA EXPERIENCIA</h1>
+                <p class="lead">Más de 24 mil unidades inmobiliarias entregadas, entre viviendas, oficinas, lotes industriales y centros comerciales respaldan nuestra experiencia.</p>
             </div>
-    
-            <!-- Tarjetas de Experiencia -->
+
             <div class="row row-cols-1 row-cols-md-4 g-4 mb-5">
                 <div class="col">
                     <div class="card h-100 shadow-sm">
@@ -449,17 +478,14 @@
         </div>
     </section>
 
-    <!-- CONTACTOS  -->
-    <section id="contacto" class="py-5 bg-light">
+    <!-- CONTACTOS -->
+    <section id="contacto" class="py-5">
         <div class="container">
-            <div class="row">
-                <!-- Título de la sección -->
-                <div class="col-12 text-center mb-5">
-                    <h1 class="display-4 fw-bold">Contáctanos</h1>
-                    <p class="lead">Estamos aquí para ayudarte. ¡Escríbenos!</p>
-                </div>
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold">Contáctanos</h1>
+                <p class="lead">Estamos aquí para ayudarte. ¡Escríbenos!</p>
             </div>
-    
+
             <div class="row">
                 <!-- Formulario de contacto -->
                 <div class="col-md-6 mb-4">
@@ -483,12 +509,12 @@
                                     <label for="mensaje" class="form-label">Mensaje</label>
                                     <textarea class="form-control" id="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
                                 </div>
-                                <button type="submit" class="btn w-100">Enviar mensaje</button>
+                                <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
                             </form>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Información de contacto y mapa -->
                 <div class="col-md-6">
                     <div class="card shadow-sm">
@@ -514,7 +540,7 @@
                             </ul>
                         </div>
                     </div>
-    
+
                     <!-- Mapa -->
                     <div class="card shadow-sm mt-4">
                         <div class="card-body p-0">
@@ -533,8 +559,8 @@
         </div>
     </section>
 
-    <!-- FOOTER  -->
-    <footer class="text-white py-5">
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row">
                 <!-- Columna 1: Enlaces rápidos -->
@@ -550,7 +576,7 @@
                         <li class="mb-2"><a href="#" class="text-white text-decoration-none">Contáctanos</a></li>
                     </ul>
                 </div>
-    
+
                 <!-- Columna 2: Información de contacto -->
                 <div class="col-md-4 mb-4">
                     <h5 class="fw-bold mb-3">Información de contacto</h5>
@@ -573,7 +599,7 @@
                         </li>
                     </ul>
                 </div>
-    
+
                 <!-- Columna 3: Redes sociales -->
                 <div class="col-md-4 mb-4">
                     <h5 class="fw-bold mb-3">Síguenos</h5>
@@ -601,14 +627,14 @@
                     </ul>
                 </div>
             </div>
-    
+
             <!-- Línea divisoria -->
             <div class="row">
                 <div class="col-12">
                     <hr class="bg-white">
                 </div>
             </div>
-    
+
             <!-- Derechos de autor -->
             <div class="row">
                 <div class="col-12 text-center">
@@ -618,7 +644,7 @@
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
