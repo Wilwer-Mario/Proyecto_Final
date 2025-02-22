@@ -23,7 +23,7 @@ Bootstrap Icons → Iconos para mejorar la interfaz de usuario.
 GitHub Pages → Despliegue del sitio web.
 
 # 🛠️ Link FIGMA
-Link Maquetación: 
+Link Maquetación: https://www.figma.com/design/yJU8cBZfCjkptLImSp29lA/Untitled?node-id=0-1&t=PVzEWC56tAbaWiCG-1
 
 # 📄 Introducción
 Vivienda Plus es una plataforma web que ofrece información detallada sobre departamentos en venta, 
