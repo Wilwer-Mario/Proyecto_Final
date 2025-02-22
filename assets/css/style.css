@@ -167,7 +167,6 @@ img {
     }
 }
 
-
 /* Sección de proyectos */
 .projects-section {
     padding: 6rem 0;
@@ -185,6 +184,55 @@ img {
     height: 200px;
     object-fit: cover;
 }
+
+/* lista de proyectos */
+
+.list-proyect .bi {
+    color: var(--color-secundario)
+}
+.list-proyect hr {
+    color: var(--verde-oscuro);
+    font-weight: bold;
+    border: 2px solid var(--verde-oscuro);
+}
+.list-proyect .lead {
+    color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list-proyect h1 {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-body);
+}
+.list-proyect .bground {
+    border-radius: 10px;
+    color: var(--blanco);
+    margin-bottom: 1rem;
+}
+
+.list-proyect .bground:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.list-proyect .bground {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--blanco);
+    padding: 0.5rem 1rem;
+}
+.list-proyect .bground .white {
+    color: var(--color-secundario);
+    font-weight: 600;
+    font-size: medium; 
+}
+.list-proyect .bground .white1 {
+    color: var(--color-secundario);
+    font-weight: 800;
+    font-size:xx-large; 
+}
+
 
 /* Sección de beneficios */
 .beneficios_section {
@@ -320,32 +368,32 @@ img {
 }
 
 /* Sección de contacto */
-#contacto {
+.contact_section {
     padding: 4rem 0;
     background-color: var(--color-fondo);
 }
 
-#contacto h1 {
+.contact_section h1 {
     color: var(--verde-oscuro);
 }
 
-#contacto .btn {
+.contact_section .btn {
     background-color: var(--verde);
     color: var(--blanco);
 }
 
-#contacto .card {
+.contact_section .card {
     border: none;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#contacto .card:hover {
+.contact_section .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-#contacto .card-title {
+.contact_section .card-title {
     color: var(--verde-oscuro);
     font-weight: bold;
 }
@@ -354,19 +402,19 @@ li strong {
     color: var(--verde-oscuro);
 }
 
-#contacto .list-unstyled li {
+.contact_section .list-unstyled li {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-#contacto .list-unstyled i {
+.contact_section .list-unstyled i {
     font-size: 1.2rem;
     color: var(--verde-oscuro);
     margin-right: 0.5rem;
 }
 
-#contacto iframe {
+.contact_section iframe {
     border-radius: 10px;
 }
 
