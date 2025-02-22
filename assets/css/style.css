@@ -22,6 +22,25 @@
     --font-accent: "Bebas Neue", sans-serif; /* Fuente para acentos o detalles */
 }
 
+
+html, body {
+    height: 100%; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main {
+    flex-grow: 1; 
+}
+
+
+footer {
+    flex-shrink: 0; 
+    width: 100%;
+}
+
 /* Estilos generales */
 body {
     font-family: var(--font-body);
@@ -160,6 +179,55 @@ img {
     }
 }
 
+/* Filter section*/
+.filters-section .form-select,
+.filters-section .form-control,
+.filters-section .btn {
+    width: 100%; 
+    max-width: 300px; 
+    margin: 0.5rem 0; 
+}
+.filters-section .form-select {
+    padding: 0.5rem; 
+    font-size: 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 0.25rem; 
+    font-size: 0.75rem;
+}
+.filters-section .form-control {
+    padding: 0.5rem; 
+    font-size: 1rem; 
+    border: 1px solid #ccc; 
+    border-radius: 0.25rem; 
+}
+.filters-section .btn {
+    padding: 0.5rem 1rem; 
+    font-size: 1rem; 
+    background-color: var(--verde-oscuro); 
+    color: white; 
+    border-radius: 0.25rem; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+.filters-section .btn:hover {
+    background-color: var(--gris);
+    margin: 2px solid var(--verde-oscuro);
+    color: var(--verde-oscuro); 
+}
+.filters-section .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+.filters-section .row {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.filters-section .col-md-8 {
+    width: 100%; 
+    max-width: 800px;
+}
+
 /* Sección de proyectos */
 .projects-section {
     padding: 6rem 0;
@@ -177,6 +245,20 @@ img {
     height: 200px;
     object-fit: cover;
 }
+
+.projects-section .col {
+    display: block; 
+    transition: opacity 0.3s ease;
+}
+
+.projects-section .col[style*="display: none"] {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 
 /* lista de proyectos */
 
